@@ -1,0 +1,7 @@
+{
+  "betterCompaction": {
+    "enabled": true,
+    "report": true,
+    "thinking": "inherit"
+  }
+}
