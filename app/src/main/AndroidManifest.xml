@@ -17,7 +17,7 @@
         android:theme="@style/Theme.ShoppingList">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.mercadolist.shoppinglist.app.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.ShoppingList">
             <intent-filter>
