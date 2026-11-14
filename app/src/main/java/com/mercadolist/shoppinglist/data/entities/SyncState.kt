@@ -2,18 +2,17 @@ package com.mercadolist.shoppinglist.data.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.time.LocalDateTime
 
 /**
- * SyncState entity tracking synchronization status and timestamps.
- * Used for offline-first sync and peer-to-peer sync tracking.
+ * Tracks sync status and timestamps for shopping lists.
+ * Used for offline-first sync tracking and conflict resolution.
  */
-@Entity(tableName = "sync_states")
+@Entity(tableName = "sync_state")
 data class SyncState(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
     val shoppingListId: Long,
-    val lastSyncedAt: LocalDateTime = LocalDateTime.now(),
+    val lastSyncedAt: Long = System.currentTimeMillis(),
     val syncStatus: String = "synced",
-    val syncMethod: String = "local"
+    val lastModifiedBy: Long? = null
 )

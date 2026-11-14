@@ -4,11 +4,10 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import java.time.LocalDateTime
 
 /**
- * ShoppingListItem entity representing an item in a shopping list.
- * Supports quantity, price, category, purchased status, and position.
+ * Represents an item in a shopping list with name, quantity, price, category,
+ * purchased status, and position.
  */
 @Entity(
     tableName = "shopping_list_items",
@@ -34,7 +33,5 @@ data class ShoppingListItem(
     val price: Double = 0.0,
     val category: String? = null,
     val purchased: Boolean = false,
-    val position: Int = 0,
-    val createdAt: LocalDateTime = LocalDateTime.now(),
-    val updatedAt: LocalDateTime = LocalDateTime.now()
+    val position: Int = 0
 )

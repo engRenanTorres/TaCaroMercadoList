@@ -2,11 +2,11 @@
 
 ## 1. Project Setup
 
-- [ ] 1.1 Create new Android project with Kotlin and Jetpack Compose
-- [ ] 1.2 Add required dependencies (Room, Navigation Compose, Nearby Connections, StateFlow)
-- [ ] 1.3 Set up project structure (modules, package organization)
-- [ ] 1.4 Configure build.gradle files for dependencies and signing
-- [ ] 1.5 Verify project builds and runs on target Android devices
+- [x] 1.1 Create new Android project with Kotlin and Jetpack Compose
+- [x] 1.2 Add required dependencies (Room, Navigation Compose, Nearby Connections, StateFlow)
+- [x] 1.3 Set up project structure (modules, package organization)
+- [x] 1.4 Configure build.gradle files for dependencies and signing
+- [x] 1.5 Verify project builds and runs on target Android devices
 
 ## 2. Data Layer Setup
 

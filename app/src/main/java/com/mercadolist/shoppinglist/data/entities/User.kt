@@ -4,8 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 /**
- * User entity representing a user in the shopping list app.
- * Supports multiple users collaborating on shared lists.
+ * Represents a user in the shopping list application.
+ * Supports multiple users collaborating on the same shopping list.
  */
 @Entity(tableName = "users")
 data class User(

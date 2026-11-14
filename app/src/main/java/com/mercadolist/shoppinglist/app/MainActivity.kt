@@ -9,8 +9,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.material3.Text
 import com.mercadolist.shoppinglist.app.ui.theme.ShoppingListTheme
-import com.mercadolist.shoppinglist.presentation.navigation.ShoppingListNavHost
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,10 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ShoppingListNavHost(
-                        navController = androidx.navigation.compose.rememberNavController(),
-                        userId = 1
-                    )
+                    ShoppingListScreen()
                 }
             }
         }

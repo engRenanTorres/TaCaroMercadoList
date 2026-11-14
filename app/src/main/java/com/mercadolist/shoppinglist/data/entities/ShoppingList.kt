@@ -4,11 +4,10 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import java.time.LocalDateTime
 
 /**
- * ShoppingList entity representing a shopping list.
- * Each list can have multiple items and can be shared with multiple users.
+ * Represents a shopping list with name, creation date, and user ID.
+ * Multiple users can access the same shopping list.
  */
 @Entity(
     tableName = "shopping_lists",
@@ -29,6 +28,5 @@ data class ShoppingList(
     val id: Long = 0,
     val name: String,
     val userId: Long,
-    val createdAt: LocalDateTime = LocalDateTime.now(),
-    val updatedAt: LocalDateTime = LocalDateTime.now()
+    val createdAt: Long = System.currentTimeMillis()
 )
