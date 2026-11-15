@@ -7,7 +7,7 @@ import java.util.Date
  * Type converters for Room database.
  * Converts between Java types and SQLite types.
  */
-class TypeConverters {
+class Converters {
     /**
      * Convert Long to Date.
      * @param value The timestamp as Long

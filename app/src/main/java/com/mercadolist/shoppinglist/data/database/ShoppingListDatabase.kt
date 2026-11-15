@@ -30,7 +30,7 @@ import com.mercadolist.shoppinglist.data.entities.SyncState
     version = 1,
     exportSchema = false
 )
-@TypeConverters(TypeConverters::class)
+@TypeConverters(Converters::class)
 abstract class ShoppingListDatabase : RoomDatabase() {
     /**
      * DAO for User entity operations.
