@@ -11,8 +11,8 @@
 ## 2. Data Layer Setup
 
 - [x] 2.1 Create Room database configuration and DAO interfaces
-- [ ] 2.2 Define Room entities (ShoppingList, ShoppingListItem, User, SyncState)
-- [ ] 2.3 Implement database initialization and migration strategy
+- [x] 2.2 Define Room entities (ShoppingList, ShoppingListItem, User, SyncState)
+- [x] 2.3 Implement database initialization and migration strategy
 - [ ] 2.4 Create repository classes for data access
 - [ ] 2.5 Implement Flow-based data streams for reactive updates
 - [ ] 2.6 Verify database operations (CRUD) work correctly

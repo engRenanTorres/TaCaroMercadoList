@@ -11,11 +11,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.material3.Text
 import com.mercadolist.shoppinglist.app.ui.theme.ShoppingListTheme
+import com.mercadolist.shoppinglist.data.DatabaseInitializer
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Initialize the database
+        DatabaseInitializer.initialize(this)
         setContent {
             ShoppingListTheme {
                 Surface(

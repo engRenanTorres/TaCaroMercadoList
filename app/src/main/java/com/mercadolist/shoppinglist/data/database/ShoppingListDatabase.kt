@@ -5,6 +5,8 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import com.mercadolist.shoppinglist.data.dao.UserDao
 import com.mercadolist.shoppinglist.data.dao.ShoppingListDao
 import com.mercadolist.shoppinglist.data.dao.ShoppingListItemDao
@@ -56,6 +58,19 @@ abstract class ShoppingListDatabase : RoomDatabase() {
          */
         @Volatile
         private var INSTANCE: ShoppingListDatabase? = null
+
+        /**
+         * Migration strategy for database version upgrades.
+         * Currently, we only have version 1, so this is a placeholder.
+         * Future versions may require more complex migrations.
+         */
+        private val MIGRATION_1_2: Migration = object : Migration(1, 2) {
+            override fun migrate(database: SupportSQLiteDatabase) {
+                // Migration from version 1 to 2
+                // For now, we just add a new table if needed or make minimal changes
+                // In a real app, this would contain SQL commands for schema updates
+            }
+        }
 
         /**
          * Get the database instance.
